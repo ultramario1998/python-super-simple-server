@@ -1,10 +1,8 @@
 from server import startServer
 from client import startClient
 import socket
-import netifaces
 
 def main():
-	print(netifaces.interfaces())
 	selection = input("Press 1 to start the server, or 2 to start the client. ")
 	if selection != '1' and selection != '2':
 		print("Invalid selection!")
